@@ -8,27 +8,46 @@ body {
     margin: 0;
 }
 
+.container {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
 .header {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 50px;
     outline: 1px solid red;
+}
+
+.logo {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
 }
 
 .links {
     display: flex;
-    flex: 1 1 0;
-    justify-content: flex-end;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
 }
 
-.logo-links {
-    display: flex;
+.image {
     flex: 1 1 0;
-    justify-content: center;
-    align-items: center;
-    padding: 5px 50px 5px 50px;
-
+    outline: 1px solid red;
+    width: 400px;
+    height: 200px;
 }
 
 .introduction {
     display: flex;
+    padding-top: 50px;
+}
+
+.introduction-words {
+    flex: 1 1 0;
+    padding-right: 50px;
 }
