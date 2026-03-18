@@ -11,7 +11,7 @@ body {
 .container {
     display: flex;
     flex-grow: 1;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .header {
@@ -20,6 +20,7 @@ body {
     justify-content: center;
     padding-bottom: 50px;
     outline: 1px solid red;
+    
 }
 
 .logo {
@@ -35,19 +36,65 @@ body {
     justify-content: center;
 }
 
-.image {
-    flex: 1 1 0;
+.links a {
+    margin: 5px;
+}
+
+.introduction .image {
     outline: 1px solid red;
-    width: 400px;
+    width: 500px;
     height: 200px;
+    margin-right: 10px;
 }
 
 .introduction {
     display: flex;
     padding-top: 50px;
+    justify-content: space-between;
 }
 
 .introduction-words {
-    flex: 1 1 0;
-    padding-right: 50px;
+    flex: .5 0 0;
+    padding-left: 190px;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.images {
+    display: flex;
+    gap: 50px;
+}
+
+.information-image-one,
+.information-image-two,
+.information-image-three,
+.information-image-four {
+    width: 100px;
+    height: 100px;
+    border: 2px solid blue;
+    border-radius: 10px;
+}
+
+.wrapper-one,
+.wrapper-two,
+.wrapper-three,
+.wrapper-four {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 110px;
+}
+
+.quote {
+    display: flex;
+}
+
+.footer {
+    display: flex;
 }
