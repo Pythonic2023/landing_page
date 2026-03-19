@@ -50,12 +50,13 @@ body {
 .introduction {
     display: flex;
     padding-top: 50px;
-    justify-content: space-between;
+    justify-content: space-around;
+    gap: 170px;
 }
 
 .introduction-words {
     flex: .5 0 0;
-    padding-left: 190px;
+    padding-left: 110px;
 }
 
 .information {
@@ -91,10 +92,17 @@ body {
     width: 110px;
 }
 
-.quote {
+.quote-container {
     display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+
+.quote {
+    
 }
 
 .footer {
     display: flex;
 }
+
