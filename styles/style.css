@@ -2,8 +2,13 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     display: flex;
+    flex-direction: column;
     height: 100vh;
     flex-wrap: wrap;
     margin: 0;
@@ -11,6 +16,62 @@ body {
 
 .section {
     display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    width: 100vw;
+    border: 2px solid rebeccapurple;
+}
+
+.section.header {
     flex-grow: 0;
     width: 100vw;
+    justify-content: space-evenly;
+    align-items: center;
 }
+
+.header-logo {
+    margin-right: 450px;
+    justify-self: flex-start;
+}
+
+.nav-bar {
+    display: flex;
+    width: 90vw;
+}
+
+.links {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+    list-style: none;
+    text-decoration: none;
+}
+
+.introduction {
+    display: flex;
+    width: 90vw;
+    padding-bottom: 20px;
+}
+
+.introduction-signup {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.introduction-signup h1 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.introduction-signup button {
+    align-self: flex-start;
+}
+
+.header-image {
+    width: 500px;
+    height: 200px;
+    margin-left: auto;
+    border: 3px solid black;
+}
+
